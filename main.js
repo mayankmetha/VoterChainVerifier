@@ -40,7 +40,7 @@ app.once('ready', () => {
     // background color of the page, this prevents any white flickering
     backgroundColor: "#D6D6D6",
     // Don't show the window until it's ready, this prevents any white flickering
-    show: false,
+    show: false
   })
   const menu = Menu.buildFromTemplate(menuTemplate)
   Menu.setApplicationMenu(menu)

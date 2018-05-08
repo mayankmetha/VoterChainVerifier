@@ -1,7 +1,7 @@
 {
   "name": "voterchain-verifier",
   "appName": "VoterChain Verifier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "VoterChain Verifier Extension",
   "author": {
     "name": "Mayank Metha D"
@@ -9,19 +9,39 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "build --mac",
-    "pack": "build --linux"
+    "compile": "electron-webpack",
+    "build": "rm -rf dist/ && npm run compile && build --dir --mac dmg"
   },
   "repository": "",
   "devDependencies": {
     "electron": "^2.0.0",
-    "electron-builder": "^20.11.1"
+    "electron-builder": "^20.11.1",
+    "electron-webpack": "^2.1.0",
+    "webpack": "^4.8.1"
   },
   "dependencies": {
-    "crypto-js": "^3.1.9-1"
+    "crypto-js": "^3.1.9-1",
+    "source-map-support": "^0.5.5"
+  },
+  "electronWebpack": {
+    "commonSourceDirectory": ".",
+    "main": {
+      "sourceDirectory": ".",
+      "extraEntries": ["@/window.js"]
+    },
+    "renderer": {
+      "sourceDirectory": null
+    }
   },
   "build": {
     "appId": "com.mayank.VoterChainVerifier",
-    "productName": "VoterChain Verifier"
+    "productName": "VoterChain Verifier",
+    "files": [
+      "blockchain.key",
+      "index.html",
+      "node_modules",
+      "main.js",
+      "window.js"
+    ]
   }
 }

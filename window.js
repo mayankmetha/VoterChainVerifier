@@ -1,9 +1,10 @@
 $(() => {
   const CryptoJS = require('crypto-js');
+  const path = require('path');
   const fs = require('fs');
   var uid = "";
   var ele = "";
-  var mac = fs.readFileSync('blockchain.key').toString();
+  var mac = fs.readFileSync(path.join(__dirname,'/blockchain.key')).toString();
   $('#username').bind('input propertychange', function() {
     onUsernameInput(this.value);
   });
