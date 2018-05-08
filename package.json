@@ -1,7 +1,7 @@
 {
   "name": "voterchain-verifier",
   "appName": "VoterChain Verifier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "VoterChain Verifier Extension",
   "author": {
     "name": "Mayank Metha D"
