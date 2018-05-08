@@ -1,16 +1,27 @@
 {
   "name": "voterchain-verifier",
-  "version": "1.0.0",
+  "appName": "VoterChain Verifier",
+  "version": "1.0.1",
   "description": "VoterChain Verifier Extension",
+  "author": {
+    "name": "Mayank Metha D"
+  },
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "build --mac",
+    "pack": "build --linux"
   },
   "repository": "",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^2.0.0",
+    "electron-builder": "^20.11.1"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1"
+  },
+  "build": {
+    "appId": "com.mayank.VoterChainVerifier",
+    "productName": "VoterChain Verifier"
   }
 }
