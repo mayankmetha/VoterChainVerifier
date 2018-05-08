@@ -1,7 +1,7 @@
 {
   "name": "voterchain-verifier",
   "appName": "VoterChain Verifier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "VoterChain Verifier Extension",
   "author": {
     "name": "Mayank Metha D"
@@ -36,12 +36,14 @@
   "build": {
     "appId": "com.mayank.VoterChainVerifier",
     "productName": "VoterChain Verifier",
+    "icon": "icons.icns",
     "files": [
       "blockchain.key",
       "index.html",
       "node_modules",
       "main.js",
-      "window.js"
+      "window.js",
+      "icons.incs"
     ]
   }
 }

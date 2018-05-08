@@ -27,7 +27,7 @@ if (process.platform === "darwin") {
 }
 
 app.setName("VoterChain Verifier")
-app.setAboutPanelOptions({applicationName: "VoterChain Verifier", applicationVersion: "1.0.3", credits: "Mayank Metha D"})
+app.setAboutPanelOptions({applicationName: "VoterChain Verifier", applicationVersion: "1.0.4", credits: "Mayank Metha D"})
 // Wait until the app is ready
 app.once('ready', () => {
   // Create a new window
