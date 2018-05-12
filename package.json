@@ -17,7 +17,7 @@
     "electron": "^2.0.0",
     "electron-builder": "^20.11.1",
     "electron-webpack": "^2.1.0",
-    "webpack": "^4.8.1"
+    "webpack": "^4.8.2"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
@@ -27,7 +27,9 @@
     "commonSourceDirectory": ".",
     "main": {
       "sourceDirectory": ".",
-      "extraEntries": ["@/window.js"]
+      "extraEntries": [
+        "@/window.js"
+      ]
     },
     "renderer": {
       "sourceDirectory": null
